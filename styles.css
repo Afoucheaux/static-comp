@@ -1,1 +1,97 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  /* border: solid 2px red; */
+}
+/* ---desk top--- */
 
+/* ---header--- */
+
+.header {
+  height: 15vh;
+  grid-column: span 4;
+  background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.left-button-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-box {
+  height: 10vh;
+  background-color: grey;
+}
+/* ---Cards--- */
+
+.the-cards {
+  padding: 1em;
+  background-color: grey;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+}
+
+.cards {
+  height: 50vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+@media screen and (max-width: 775px) {
+
+/* ---card--- */
+
+  .the-cards {
+    padding: 1em;
+    background-color: grey;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+  }
+
+  .cards {
+    height: 50vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+/* ---cards--- */
+  .the-cards {
+    padding: 1em;
+    background-color: grey;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1em;
+  }
+
+  .cards {
+    height: 50vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+}
