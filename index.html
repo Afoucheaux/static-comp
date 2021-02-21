@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta chatset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="stylesheet" href="./styles.css">
+    <title>Static Comp</title>
+  </head>
+  <body>
+    <header class="header">
+      <section class="left-button-box">
+        <article class="button-styling">
+          <img class="small-icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggZD0iTTQ2Nyw2MUgxNjVjLTI0LjgyLDAtNDUsMjAuMTktNDUsNDVjMCwyNC44MiwyMC4xOCw0NSw0NSw0NWgzMDJjMjQuODEsMCw0NS0yMC4xOCw0NS00NUM1MTIsODEuMTksNDkxLjgxLDYxLDQ2Nyw2MXoiIGZpbGw9IiMwMDAwMDAiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggZD0iTTQ2NywyMTFIMTY1Yy0yNC44MiwwLTQ1LDIwLjE5LTQ1LDQ1YzAsMjQuODIsMjAuMTgsNDUsNDUsNDVoMzAyYzI0LjgxLDAsNDUtMjAuMTgsNDUtNDVDNTEyLDIzMS4xOSw0OTEuODEsMjExLDQ2NywyMTF6ICAgICIgZmlsbD0iIzAwMDAwMCIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cGF0aCBkPSJNNDY3LDM2MUgxNjVjLTI0LjgyLDAtNDUsMjAuMTktNDUsNDVjMCwyNC44MiwyMC4xOCw0NSw0NSw0NWgzMDJjMjQuODEsMCw0NS0yMC4xOCw0NS00NUM1MTIsMzgxLjE5LDQ5MS44MSwzNjEsNDY3LDM2MXogICAgIiBmaWxsPSIjMDAwMDAwIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCTxnPgoJCTxwYXRoIGQ9Ik00NSw2MUMyMC4xOCw2MSwwLDgxLjE5LDAsMTA2YzAsMjQuODIsMjAuMTgsNDUsNDUsNDVjMjQuODEsMCw0NS0yMC4xOCw0NS00NUM5MCw4MS4xOSw2OS44MSw2MSw0NSw2MXoiIGZpbGw9IiMwMDAwMDAiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggZD0iTTQ1LDIxMWMtMjQuODIsMC00NSwyMC4xOS00NSw0NWMwLDI0LjgyLDIwLjE4LDQ1LDQ1LDQ1YzI0LjgxLDAsNDUtMjAuMTgsNDUtNDVDOTAsMjMxLjE5LDY5LjgxLDIxMSw0NSwyMTF6IiBmaWxsPSIjMDAwMDAwIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCTxnPgoJCTxwYXRoIGQ9Ik00NSwzNjFjLTI0LjgyLDAtNDUsMjAuMTktNDUsNDVjMCwyNC44MiwyMC4xOCw0NSw0NSw0NWMyNC44MSwwLDQ1LTIwLjE4LDQ1LTQ1QzkwLDM4MS4xOSw2OS44MSwzNjEsNDUsMzYxeiIgZmlsbD0iIzAwMDAwMCIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxsaW5rIGhyZWY9ImNocm9tZS1leHRlbnNpb246Ly9sbmtkYmpianBucGplY2lpcG9hZmxtcGNkZGlucGpqcC9teXR1YmUuY3NzIiByZWw9InN0eWxlc2hlZXQiIHR5cGU9InRleHQvY3NzIj48L2xpbms+PC9nPjwvc3ZnPg==" />
+          <button class="main">Join</button>
+        </article>
+        <article class="button-styling">
+          <img class="small-icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQyNS42IDQyNS42IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCTxnPgoJCTxnPgoJCQk8cGF0aCBkPSJNMzgyLjkzMywxNzUuNDY3SDQyNS42QzQyMi40LDEwNy4wOTMsMzg4LjY5Myw0Ni45MzMsMzM3LjYsOGwtMzAuNCwzMC40QzM1MC41MDcsNjkuNDQsMzc5LjYyNywxMTguOTMzLDM4Mi45MzMsMTc1LjQ2NyAgICAgeiIgZmlsbD0iIzAwMDAwMCIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPgoJCQk8cGF0aCBkPSJNMTE4LjUwNywzOC41MDdMODgsOEMzNi45MDcsNDYuOTMzLDMuMiwxMDcuMDkzLDAsMTc1LjQ2N2g0Mi42NjdDNDUuOTczLDExOC45MzMsNzUuMDkzLDY5LjQ0LDExOC41MDcsMzguNTA3eiIgZmlsbD0iIzAwMDAwMCIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPgoJCQk8cGF0aCBkPSJNMzQwLjgsMTg2LjEzM2MwLTY1LjYtMzQuODgtMTIwLjMyLTk2LTEzNC44MjdWMzYuOGMwLTE3LjcwNy0xNC4yOTMtMzItMzItMzJzLTMyLDE0LjI5My0zMiwzMnYxNC41MDcgICAgIGMtNjEuMTIsMTQuNTA3LTk2LDY5LjIyNy05NiwxMzQuODI3VjI5Mi44bC00Mi42NjcsNDIuNjY3VjM1Ni44aDM0MS4zMzN2LTIxLjMzM0wzNDAuOCwyOTIuOFYxODYuMTMzeiIgZmlsbD0iIzAwMDAwMCIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPgoJCQk8cGF0aCBkPSJNMjEyLjgsNDIwLjhMMjEyLjgsNDIwLjhjMi45ODcsMCw1Ljg2Ny0wLjMyLDguNjQtMC44NTNjMTMuODY3LTIuODgsMjUuMjgtMTIuNDgsMzAuNzItMjUuMTczICAgICBjMi4xMzMtNS4xMiwzLjMwNy0xMC42NjcsMy4zMDctMTYuNjRoLTg1LjMzM0MxNzAuMTMzLDQwMS43MDcsMTg5LjIyNyw0MjAuOCwyMTIuOCw0MjAuOHoiIGZpbGw9IiMwMDAwMDAiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiPjwvcGF0aD4KCQk8L2c+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGxpbmsgaHJlZj0iY2hyb21lLWV4dGVuc2lvbjovL2xua2RiamJqcG5wamVjaWlwb2FmbG1wY2RkaW5wampwL215dHViZS5jc3MiIHJlbD0ic3R5bGVzaGVldCIgdHlwZT0idGV4dC9jc3MiPjwvbGluaz48L2c+PC9zdmc+" />
+          <button class="main">The</button>
+        </article>
+        <article class="button-styling">
+          <img class="small-icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDM0MS4zMzMgMzQxLjMzMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8Zz4KCQkJPHBhdGggZD0iTTE3MC42NjcsMTcwLjY2N2M0Ny4xNDcsMCw4NS4zMzMtMzguMjkzLDg1LjMzMy04NS4zMzNDMjU2LDM4LjE4NywyMTcuODEzLDAsMTcwLjY2NywwUzg1LjMzMywzOC4xODcsODUuMzMzLDg1LjMzMyAgICAgQzg1LjMzMywxMzIuMzczLDEyMy41MiwxNzAuNjY3LDE3MC42NjcsMTcwLjY2N3oiIGZpbGw9IiMwMDAwMDAiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCQkJPHBhdGggZD0iTTE3MC42NjcsMjEzLjMzM0MxMTMuODEzLDIxMy4zMzMsMCwyNDEuODEzLDAsMjk4LjY2N3Y0Mi42NjdoMzQxLjMzM3YtNDIuNjY3ICAgICBDMzQxLjMzMywyNDEuODEzLDIyNy41MiwyMTMuMzMzLDE3MC42NjcsMjEzLjMzM3oiIGZpbGw9IiMwMDAwMDAiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCQk8L2c+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGxpbmsgaHJlZj0iY2hyb21lLWV4dGVuc2lvbjovL2xua2RiamJqcG5wamVjaWlwb2FmbG1wY2RkaW5wampwL215dHViZS5jc3MiIHJlbD0ic3R5bGVzaGVldCIgdHlwZT0idGV4dC9jc3MiPjwvbGluaz48L2c+PC9zdmc+" />
+          <button class="main">Club!</button>
+        </article>
+      </section>
+      <section class="right-button-box">
+        <article class="site-name">
+          <h1 class="name">Cheeses of the World</h1>
+        </article>
+        <article class="login">
+          <img></img>
+          <button class="user-login">User Name</button>
+          <img></img>
+        </article>
+      </section>
+    </header>
+    <main class="main-layout">
+      <article class="two-box">
+        <h2 class="title-two">In the Name of Cheese!</h2>
+      </article>
+      <section class="the-cards">
+        <article class="cards card-one">
+          <div class="img-container">
+            <img class="small-card-img" src="./assets/cheeseOne.jpg" alt=""></img>
+            <div class="overlay">
+              <div class="arrow-back">
+                <img class="arrow" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ1OSA0NTkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGcgaWQ9InNoYXJlIj4KCQk8cGF0aCBkPSJNNDU5LDIxNi43NUwyODAuNSwzOC4yNXYxMDJjLTE3OC41LDI1LjUtMjU1LDE1My0yODAuNSwyODAuNUM2My43NSwzMzEuNSwxNTMsMjkwLjcsMjgwLjUsMjkwLjd2MTA0LjU1TDQ1OSwyMTYuNzV6IiBmaWxsPSIjMDAwMDAwIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIj48L3BhdGg+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGxpbmsgaHJlZj0iY2hyb21lLWV4dGVuc2lvbjovL2xua2RiamJqcG5wamVjaWlwb2FmbG1wY2RkaW5wampwL215dHViZS5jc3MiIHJlbD0ic3R5bGVzaGVldCIgdHlwZT0idGV4dC9jc3MiPjwvbGluaz48L2c+PC9zdmc+" />
+              </div>
+              <div class="likes">
+                <p class="like">Likes!</p>
+                <h4 class="num">05<h4>
+              </div>
+            </div>
+          </div>
+          <h3 class="card">Asiago<h3>
+          <p class="info">aging 3-18 mounths</p>
+          <div class="card-box">
+            <p class="link">https://en.wikipedia.org/wiki/Asiago_cheese</p>
+          </div>
+          <h3 class="playlist">Originating in	Veneto, Trentino</h3>
+          <h4 class="number">01<h4>
+        </article>
+        <article class="cards card-two">
+          <div class="img-container">
+            <img class="small-card-img" src="./assets/cheeseTwo.jpg" alt=""></img>
+            <div class="overlay">
+              <div class="arrow-back">
+                <img class="arrow" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ1OSA0NTkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGcgaWQ9InNoYXJlIj4KCQk8cGF0aCBkPSJNNDU5LDIxNi43NUwyODAuNSwzOC4yNXYxMDJjLTE3OC41LDI1LjUtMjU1LDE1My0yODAuNSwyODAuNUM2My43NSwzMzEuNSwxNTMsMjkwLjcsMjgwLjUsMjkwLjd2MTA0LjU1TDQ1OSwyMTYuNzV6IiBmaWxsPSIjMDAwMDAwIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIj48L3BhdGg+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGxpbmsgaHJlZj0iY2hyb21lLWV4dGVuc2lvbjovL2xua2RiamJqcG5wamVjaWlwb2FmbG1wY2RkaW5wampwL215dHViZS5jc3MiIHJlbD0ic3R5bGVzaGVldCIgdHlwZT0idGV4dC9jc3MiPjwvbGluaz48L2c+PC9zdmc+" />
+              </div>
+              <div class="likes">
+                <p class="like">Likes!</p>
+                <h4 class="num">08<h4>
+              </div>
+            </div>
+          </div>
+          <h3 class="card">Brie<h3>
+          <p class="info">aging 5-6 weeks</p>
+          <div class="card-box">
+            <p class="link">https://en.wikipedia.org/wiki/Brie</p>
+          </div>
+          <h3 class="playlist">Originating in the French village of Brie</h3>
+          <h4 class="number">02<h4>
+        </article>
+        <article class="cards card-three">
+          <div class="img-container">
+            <img class="small-card-img" src="./assets/cheeseThree.jpg" alt=""></img>
+            <div class="overlay">
+              <div class="arrow-back">
+                <img class="arrow" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ1OSA0NTkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGcgaWQ9InNoYXJlIj4KCQk8cGF0aCBkPSJNNDU5LDIxNi43NUwyODAuNSwzOC4yNXYxMDJjLTE3OC41LDI1LjUtMjU1LDE1My0yODAuNSwyODAuNUM2My43NSwzMzEuNSwxNTMsMjkwLjcsMjgwLjUsMjkwLjd2MTA0LjU1TDQ1OSwyMTYuNzV6IiBmaWxsPSIjMDAwMDAwIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIj48L3BhdGg+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGxpbmsgaHJlZj0iY2hyb21lLWV4dGVuc2lvbjovL2xua2RiamJqcG5wamVjaWlwb2FmbG1wY2RkaW5wampwL215dHViZS5jc3MiIHJlbD0ic3R5bGVzaGVldCIgdHlwZT0idGV4dC9jc3MiPjwvbGluaz48L2c+PC9zdmc+" />
+              </div>
+              <div class="likes">
+                <p class="like">Likes!</p>
+                <h4 class="num">02<h4>
+              </div>
+            </div>
+          </div>
+          <h3 class="card">Cheddar<h3>
+          <p class="info">aging 3-24 mounths</p>
+          <div class="card-box">
+            <p class="link">https://en.wikipedia.org/wiki/Cheddar_cheese</p>
+          </div>
+          <h3 class="playlist">Originating in the English village of Cheddar in Somerset</h3>
+          <h4 class="number">03<h4>
+        </article>
+        <article class="cards card-four">
+          <div class="img-container">
+            <img class="small-card-img" src="./assets/cheeseFour.jpg" alt=""></img>
+            <div class="overlay">
+              <div class="arrow-back">
+                <img class="arrow" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ1OSA0NTkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGcgaWQ9InNoYXJlIj4KCQk8cGF0aCBkPSJNNDU5LDIxNi43NUwyODAuNSwzOC4yNXYxMDJjLTE3OC41LDI1LjUtMjU1LDE1My0yODAuNSwyODAuNUM2My43NSwzMzEuNSwxNTMsMjkwLjcsMjgwLjUsMjkwLjd2MTA0LjU1TDQ1OSwyMTYuNzV6IiBmaWxsPSIjMDAwMDAwIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIj48L3BhdGg+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGxpbmsgaHJlZj0iY2hyb21lLWV4dGVuc2lvbjovL2xua2RiamJqcG5wamVjaWlwb2FmbG1wY2RkaW5wampwL215dHViZS5jc3MiIHJlbD0ic3R5bGVzaGVldCIgdHlwZT0idGV4dC9jc3MiPjwvbGluaz48L2c+PC9zdmc+" />
+              </div>
+              <div class="likes">
+                <p class="like">Likes!</p>
+                <h4 class="num">00<h4>
+              </div>
+            </div>
+          </div>
+          <h3 class="card">Stilton<h3>
+          <p class="info">aging 9 weeks</p>
+          <div class="card-box">
+            <p class="link">https://en.wikipedia.org/wiki/Stilton_cheese</p>
+          </div>
+          <h3 class="playlist">Originating in the English village Stilton</h3>
+          <h4 class="number">04<h4>
+        </article>
+        <article class="cards card-five">
+          <div class="img-container">
+            <img class="small-card-img" src="./assets/cheeseFive.jpg" alt=""></img>
+            <div class="overlay">
+              <div class="arrow-back">
+                <img class="arrow" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ1OSA0NTkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGcgaWQ9InNoYXJlIj4KCQk8cGF0aCBkPSJNNDU5LDIxNi43NUwyODAuNSwzOC4yNXYxMDJjLTE3OC41LDI1LjUtMjU1LDE1My0yODAuNSwyODAuNUM2My43NSwzMzEuNSwxNTMsMjkwLjcsMjgwLjUsMjkwLjd2MTA0LjU1TDQ1OSwyMTYuNzV6IiBmaWxsPSIjMDAwMDAwIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIj48L3BhdGg+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGxpbmsgaHJlZj0iY2hyb21lLWV4dGVuc2lvbjovL2xua2RiamJqcG5wamVjaWlwb2FmbG1wY2RkaW5wampwL215dHViZS5jc3MiIHJlbD0ic3R5bGVzaGVldCIgdHlwZT0idGV4dC9jc3MiPjwvbGluaz48L2c+PC9zdmc+" />
+              </div>
+              <div class="likes">
+                <p class="like">Likes!</p>
+                <h4 class="num">10<h4>
+              </div>
+            </div>
+          </div>
+          <h3 class="card">Plate One<h3>
+          <p class="info">aging variable</p>
+          <div class="card-box">
+            <p class="link">None at this time</p>
+          </div>
+          <h3 class="playlist">variable</h3>
+          <h4 class="number">05<h4>
+        </article>
+        <article class="cards card-Six">
+          <div class="img-container">
+            <img class="small-card-img" src="./assets/cheeseSix.jpg" alt=""></img>
+            <div class="overlay">
+              <div class="arrow-back">
+                <img class="arrow" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ1OSA0NTkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGcgaWQ9InNoYXJlIj4KCQk8cGF0aCBkPSJNNDU5LDIxNi43NUwyODAuNSwzOC4yNXYxMDJjLTE3OC41LDI1LjUtMjU1LDE1My0yODAuNSwyODAuNUM2My43NSwzMzEuNSwxNTMsMjkwLjcsMjgwLjUsMjkwLjd2MTA0LjU1TDQ1OSwyMTYuNzV6IiBmaWxsPSIjMDAwMDAwIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIj48L3BhdGg+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGxpbmsgaHJlZj0iY2hyb21lLWV4dGVuc2lvbjovL2xua2RiamJqcG5wamVjaWlwb2FmbG1wY2RkaW5wampwL215dHViZS5jc3MiIHJlbD0ic3R5bGVzaGVldCIgdHlwZT0idGV4dC9jc3MiPjwvbGluaz48L2c+PC9zdmc+" />
+              </div>
+              <div class="likes">
+                <p class="like">Likes!</p>
+                <h4 class="num">12<h4>
+              </div>
+            </div>
+          </div>
+          <h3 class="card">Plate Two<h3>
+          <p class="info">aging variable</p>
+          <div class="card-box">
+            <p class="link">None at this time</p>
+          </div>
+          <h3 class="playlist">variable</h3>
+          <h4 class="number">06<h4>
+        </article>
+        <article class="cards card-Seven">
+          <div class="img-container">
+            <img class="small-card-img" src="./assets/cheeseSeven.jpg" alt=""></img>
+            <div class="overlay">
+              <div class="arrow-back">
+                <img class="arrow" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ1OSA0NTkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGcgaWQ9InNoYXJlIj4KCQk8cGF0aCBkPSJNNDU5LDIxNi43NUwyODAuNSwzOC4yNXYxMDJjLTE3OC41LDI1LjUtMjU1LDE1My0yODAuNSwyODAuNUM2My43NSwzMzEuNSwxNTMsMjkwLjcsMjgwLjUsMjkwLjd2MTA0LjU1TDQ1OSwyMTYuNzV6IiBmaWxsPSIjMDAwMDAwIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIj48L3BhdGg+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGxpbmsgaHJlZj0iY2hyb21lLWV4dGVuc2lvbjovL2xua2RiamJqcG5wamVjaWlwb2FmbG1wY2RkaW5wampwL215dHViZS5jc3MiIHJlbD0ic3R5bGVzaGVldCIgdHlwZT0idGV4dC9jc3MiPjwvbGluaz48L2c+PC9zdmc+" />
+              </div>
+              <div class="likes">
+                <p class="like">Likes!</p>
+                <h4 class="num">0<h4>
+              </div>
+            </div>
+          </div>
+          <h3 class="card">Blue Goat<h3>
+          <p class="info">aging variable</p>
+          <div class="card-box">
+            <p class="link">https://en.wikipedia.org/wiki/List_of_goat_milk</p>
+          </div>
+          <h3 class="playlist">variable</h3>
+          <h4 class="number">07<h4>
+        </article>
+        <article class="cards card-eight">
+          <div class="img-container">
+            <img class="small-card-img" src="./assets/cheeseEight.jpg" alt=""></img>
+            <div class="overlay">
+              <div class="arrow-back">
+                <img class="arrow" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ1OSA0NTkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGcgaWQ9InNoYXJlIj4KCQk8cGF0aCBkPSJNNDU5LDIxNi43NUwyODAuNSwzOC4yNXYxMDJjLTE3OC41LDI1LjUtMjU1LDE1My0yODAuNSwyODAuNUM2My43NSwzMzEuNSwxNTMsMjkwLjcsMjgwLjUsMjkwLjd2MTA0LjU1TDQ1OSwyMTYuNzV6IiBmaWxsPSIjMDAwMDAwIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIj48L3BhdGg+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGxpbmsgaHJlZj0iY2hyb21lLWV4dGVuc2lvbjovL2xua2RiamJqcG5wamVjaWlwb2FmbG1wY2RkaW5wampwL215dHViZS5jc3MiIHJlbD0ic3R5bGVzaGVldCIgdHlwZT0idGV4dC9jc3MiPjwvbGluaz48L2c+PC9zdmc+" />
+              </div>
+              <div class="likes">
+                <p class="like">Likes!</p>
+                <h4 class="num">07<h4>
+              </div>
+            </div>
+          </div>
+          <h3 class="card">Parmigiano-Reggiano<h3>
+          <p class="info">13-36 months</p>
+          <div class="card-box">
+            <p class="link">https://en.wikipedia.org/wiki/Parmigiano-Reggiano</p>
+          </div>
+          <h3 class="playlist">he provinces of Parma, Reggio Emilia, Italy</h3>
+          <h4 class="number">08<h4>
+        </article>
+      </section>
+  </body>
+</html>
